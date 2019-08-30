@@ -1,6 +1,7 @@
 package com.service;
 
 import com.model.IntermediateTable;
+import com.model.OtherPub;
 
 import java.util.List;
 
@@ -13,4 +14,6 @@ import java.util.List;
 public interface testService {
 
     List<IntermediateTable> seletAll();
+
+    List<OtherPub> selectAll();
 }

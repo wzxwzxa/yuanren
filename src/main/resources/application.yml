@@ -5,9 +5,17 @@ spring:
     cache: false
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/meteorological?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    url: jdbc:mysql://192.168.2.184:3306/wfzzupdate?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: 123456
+    password: zengjian
+#    useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+#&autoReconnect=true&failOverReadOnly=false
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://192.168.2.184:3306/wfzzupdate?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false
+#    username: root
+#    password: zengjian
+
+
 
   jpa:
     show-sql: true

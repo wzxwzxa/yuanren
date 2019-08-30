@@ -1,6 +1,9 @@
 package com.control;
 
+import com.common.utils.Data;
+import com.common.utils.Result;
 import com.model.IntermediateTable;
+import com.model.OtherPub;
 import com.service.testService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,6 +28,22 @@ public class testController{
     public List<IntermediateTable> test(){
         System.out.println(111);
        return testService.seletAll();
+    }
+
+    @RequestMapping("testTwo")
+    @ResponseBody
+    public Result testTwo(){
+
+        try {
+            List<OtherPub> otherPubs = testService.selectAll();
+            Data data = new Data();
+            data.setContent(otherPubs);
+            data.setTotal(100);
+            return new Result(1,"访问成功",data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(0,"访问失败",e.getMessage());
+        }
     }
 
 }

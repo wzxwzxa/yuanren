@@ -70,10 +70,12 @@
             <optional>true</optional>
         </dependency>
         <!--mysql版本依赖-->
+        <!--mysql5-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.15</version>
+            <!--<version>5.1.5</version>-->
         </dependency>
         <!--默认使用yml,有时需要使用传统的xml或者properties配置就需要这个依赖-->
         <dependency>
@@ -130,7 +132,49 @@
             <version>8.0.36</version>
             <scope>provided</scope>
         </dependency>
+        <!--模板引擎一种基于模板和要改变的数据并用来生成输出文本（HTML网页、电子邮件、配置文件、源代码等）的通用工具-->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.23</version>
+        </dependency>
+        <!--是ZeroC开发的一个面向对象的中间件平台。它提供了面向对象的远程过程调用、网格计算和发布/订阅功能-->
+        <dependency>
+            <groupId>com.zeroc</groupId>
+            <artifactId>ice</artifactId>
+            <version>3.6.4</version>
+        </dependency>
+        <!--office-->
+        <dependency>
+            <groupId>net.sf.jacob-project</groupId>
+            <artifactId>jacob</artifactId>
+            <version>1.14.3</version>
+        </dependency>
+        <!--组件事务监视器-->
+        <dependency>
+            <groupId>com.vividsolutions</groupId>
+            <artifactId>jts</artifactId>
+            <version>1.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>2.29</version>
+        </dependency>
+        <!--转换空间坐标-->
+        <dependency>
+            <groupId>org.osgeo</groupId>
+            <artifactId>proj4j</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+        <!--webGis-->
+        <dependency>
+            <groupId>org.meteothink</groupId>
+            <artifactId>wContour</artifactId>
+            <version>1.6.1</version>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
