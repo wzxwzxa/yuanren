@@ -74,7 +74,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.15</version>
+            <version>8.0.16</version>
             <!--<version>5.1.5</version>-->
         </dependency>
         <!--默认使用yml,有时需要使用传统的xml或者properties配置就需要这个依赖-->
